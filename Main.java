@@ -94,6 +94,7 @@ public class Main {
         for (Notebook notebook : filteredNotebooks) {
             System.out.println(notebook.brand + " " + notebook.color + " " + notebook.operatingSystem + " " + notebook.screenSize + "inches " + notebook.RAM + "GB " + notebook.HDD + "GB " + notebook.price + "USD");
         }
+        scanner.close();
     }
 
     private static List<Notebook> filterNotebooks(List<Notebook> notebooks, Map<Integer, Object> filterCriteria) {
